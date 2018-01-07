@@ -13,7 +13,8 @@ const data = Array.from(new Array(9)).map((_val, i) => ({
 
   const GridExample = () => {
     return (
-        <Grid data={data1} columnNum={3} hasLine={false}/>
+      
+        <Grid data={data1} columnNum={2} hasLine={false}/>
     );
 };
 
