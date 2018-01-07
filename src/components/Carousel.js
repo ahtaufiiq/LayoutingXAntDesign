@@ -1,28 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {View, Text, Image, Dimensions} from 'react-native';
-import { Carousel } from 'antd-mobile';
+import { Carousel,WingBlank } from 'antd-mobile';
 
-let screenWidth= Dimensions.get('window').width;
-  const CarouselExample = () => {
-    
+export default class example extends Component {
+  
+  render() {
+    let screenWidth= Dimensions.get('window').width;
     return (
-      <Carousel vertical
-      autoplay
-    >
-      <Image 
-      style={{width: screenWidth, height: 180}}
-        source={{uri: 'https://zos.alipayobjects.com/rmsportal/AiyWuByWklrrUDlFignR.png'}}
-        />
+        <WingBlank>
+        <Carousel horizontal
+        autoplay >
         <Image 
         style={{width: screenWidth, height: 180}}
-        source={{uri: 'https://zos.alipayobjects.com/rmsportal/AiyWuByWklrrUDlFignR.png'}}
-        />
-        <Image 
-        style={{width: screenWidth, height: 180}}
-        source={{uri: 'https://zos.alipayobjects.com/rmsportal/AiyWuByWklrrUDlFignR.png'}}
-        />
-        </Carousel>
+          source={{uri: 'https://zos.alipayobjects.com/rmsportal/AiyWuByWklrrUDlFignR.png'}}
+          />
+          <Image 
+          style={{width: screenWidth, height: 180}}
+          source={{uri: 'https://zos.alipayobjects.com/rmsportal/AiyWuByWklrrUDlFignR.png'}}
+          />
+          <Image 
+          style={{width: screenWidth, height: 180}}
+          source={{uri: 'https://zos.alipayobjects.com/rmsportal/AiyWuByWklrrUDlFignR.png'}}
+          />
+          </Carousel>
+        </WingBlank>
     );
-};
-
-export default CarouselExample;
+  }
+}

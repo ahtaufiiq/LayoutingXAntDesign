@@ -11,13 +11,13 @@ const data = Array.from(new Array(9)).map((_val, i) => ({
     icon: 'https://gw.alipayobjects.com/zos/rmsportal/WXoqXTHrSnRcUwEaQgXJ.png',
   }));
 
-  const GridExample = () => {
+  const GridExample2 = () => {
     return (
         <WingBlank>
-        <Grid data={data1} columnNum={2} hasLine={false}/>
+        <Grid data={data1} isCarousel={true} hasLine={false} carouselMaxRow={1}/>
         </WingBlank>
         
     );
 };
 
-export default GridExample;
+export default GridExample2;
