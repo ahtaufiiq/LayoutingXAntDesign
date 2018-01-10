@@ -1,5 +1,6 @@
 package com.layouting;
 
+import com.lwansbrough.RCTCamera.RCTCameraPackage;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
